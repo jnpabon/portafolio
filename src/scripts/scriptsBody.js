@@ -1,4 +1,5 @@
-
+import pdfEnglish from '../assets/QA_Engineer_Jenny_Pabón_English.pdf';
+import pdfSpanish from '../assets/Ingeniera_QA_Jenny_Pabón.pdf';
 
 // Define a flag to prevent multiple animations
 let isAnimating = false;
