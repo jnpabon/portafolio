@@ -1,3 +1,5 @@
+
+
 // Define a flag to prevent multiple animations
 let isAnimating = false;
 
@@ -187,12 +189,12 @@ function toggleLanguage() {
         heroTitle.innerHTML = `${staticTextEn}<span id="role"></span>`;
         knowMoreBtn.textContent = 'Know more';
         resumeLink.textContent = 'View Resume';
-        resumeLink.href = 'src/assets/QA_Engineer_Jenny_Pabón_English.pdf';
+        resumeLink.href = pdfEnglish;
     } else {
         heroTitle.innerHTML = `${staticTextEs}<span id="role"></span>`;
         knowMoreBtn.textContent = 'Saber más';
         resumeLink.textContent = 'Ver Currículum';
-        resumeLink.href = 'src/assets/Ingeniera_QA_Jenny_Pabón.pdf';
+        resumeLink.href = pdfSpanish;
     }
 
     // Re-select the role element after updating the innerHTML
