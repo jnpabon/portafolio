@@ -1,0 +1,19 @@
+.project-wrapper__keywords {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .keyword {
+    background: linear-gradient(to right, #0f3443, #24a06c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cta-btn--hero, .text-color-main {
+    margin-top: 1rem;
+  }
