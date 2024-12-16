@@ -1,6 +1,3 @@
-import pdfEnglish from '../assets/QA_Engineer_Jenny_Pabón_English.pdf';
-import pdfSpanish from '../assets/Ingeniera_QA_Jenny_Pabón.pdf';
-
 // Define a flag to prevent multiple animations
 let isAnimating = false;
 
@@ -185,17 +182,17 @@ function toggleLanguage() {
     const knowMoreBtn = document.getElementById('know-more-btn');
     const resumeLink = document.getElementById("resume-link");
 
-    // Update the hero title, "Know more" button, "View Resume" button and the resume.pdf text based on the current language
+    // Update the hero title, "Know more" button, the text of "View Resume" button and go to the CV access, all based on the current language
     if (currentLang === 'en') {
         heroTitle.innerHTML = `${staticTextEn}<span id="role"></span>`;
         knowMoreBtn.textContent = 'Know more';
         resumeLink.textContent = 'View Resume';
-        resumeLink.href = pdfEnglish;
+        resumeLink.href = "https://drive.google.com/file/d/112RE0j2lnAekO-4syh3oE-wqn40x9yyy/view?usp=sharing";
     } else {
         heroTitle.innerHTML = `${staticTextEs}<span id="role"></span>`;
         knowMoreBtn.textContent = 'Saber más';
         resumeLink.textContent = 'Ver Currículum';
-        resumeLink.href = pdfSpanish;
+        resumeLink.href = "https://drive.google.com/file/d/1hRU0LBi893Kzz702U1tJQjEmPLwCYJ5F/view?usp=sharing";
     }
 
     // Re-select the role element after updating the innerHTML
