@@ -1,5 +1,5 @@
-import pdfEnglish from '../assets/QA_Engineer_Jenny_Pabón_English.pdf';
-import pdfSpanish from '../assets/Ingeniera_QA_Jenny_Pabón.pdf';
+//import pdfEnglish from '../assets/QA_Engineer_Jenny_Pabón_English.pdf';
+//import pdfSpanish from '../assets/Ingeniera_QA_Jenny_Pabón.pdf';
 
 // Define a flag to prevent multiple animations
 let isAnimating = false;
@@ -184,19 +184,26 @@ function toggleLanguage() {
     const heroTitle = document.getElementById('hero-title');
     const knowMoreBtn = document.getElementById('know-more-btn');
     const resumeLink = document.getElementById("resume-link");
+    const resumeLinkSpanish = document.getElementById("resume-link-spanish");
 
     // Update the hero title, "Know more" button, "View Resume" button and the resume.pdf text based on the current language
     if (currentLang === 'en') {
         heroTitle.innerHTML = `${staticTextEn}<span id="role"></span>`;
         knowMoreBtn.textContent = 'Know more';
-        resumeLink.textContent = 'View Resume';
-        resumeLink.href = pdfEnglish;
+        //resumeLink.textContent = 'View Resume';
+        //resumeLink.href = './assets/QA_Engineer_Jenny_Pabón_English.pdf';
+        //resumeLink.style.display = 'inline'
+        //resumeLinkSpanish.style.display = 'none'
     } else {
         heroTitle.innerHTML = `${staticTextEs}<span id="role"></span>`;
         knowMoreBtn.textContent = 'Saber más';
-        resumeLink.textContent = 'Ver Currículum';
-        resumeLink.href = pdfSpanish;
+        //resumeLink.textContent = 'Ver Currículum';
+        //resumeLink.href = './assets/Ingeniera_QA_Jenny_Pabón.pdf';
+        //resumeLink.style.display = 'none'
+        //resumeLinkSpanish.style.display = 'inline'
     }
+
+  
 
     // Re-select the role element after updating the innerHTML
     roleElement = document.getElementById("role");
